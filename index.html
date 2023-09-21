@@ -24,9 +24,15 @@
                     <li class="list"><a href="portfolio.html" class="aheader">Portfolio</a></li>
                     <li class="list"><a href="Contacts" class="aheader">Contacts</a></li>
                 </ul>
-                <address class="headeradd">
-                    <a href="mailto:info@devstudio.com" class="addheader">info@devstudio.com</a>
-                    <a href="tel:+110001111111" class="addheader">+11 (000) 111-11-11</a>
+                <address class="headeradd address">
+                    <ul class="address-item">
+                        <li class="addresslist">
+                            <a href="mailto:info@devstudio.com" class="addheader">info@devstudio.com</a>
+                        </li>
+                        <li class="addresslist">
+                            <a href="tel:+110001111111" class="addheader">+11(000)1111111</a>
+                        </li>
+                    </ul>
                 </address>
             </nav>
         </div>
@@ -175,34 +181,34 @@
                 <div class="section-container">
                     <h2>Customers</h2>
                     <ul class="clientsection-ul">
-                        <li class="list">
-                    <svg>
-                        <use class="clientlinks" href="images/icons/symbol-defs.svg#icon-yacomplogo"></use>
-                    </svg>
-                    </li>
-                    <li class="list">
-                        <svg>
-                            <use class="clientlinks" href="images/icons/symbol-defs.svg#icon-taglinelogo"></use>
+                        <li class="clientlist">
+                                <svg class="clientimg" width="104" height="56">
+                                    <use href="images/icons/iconsclient.svg#icon-Logoclient1" class="clientlink"></use>
+                                </svg>
+                        </li>
+                        <li class="clientlist">
+                            <svg class="clientimg" width="104" height="56">
+                            <use href="images/icons/iconsclient.svg#icon-logoclient2"></use>
                         </svg>
                         </li>
-                        <li class="list">
-                            <svg>
-                                <use class="clientlinks" href="images/icons/symbol-defs.svg#icon-camplogo"></use>
+                        <li class="clientlist">
+                            <svg class="clientimg" width="104" height="56">
+                                <use href="images/icons/iconsclient.svg#icon-Logoclient3"></use>
                             </svg>
                         </li>
-                        <li class="list">
-                            <svg>
-                                <use class="clientlinks" href="images/icons/symbol-defs.svg#icon-foster"></use>
+                        <li class="clientlist">
+                            <svg class="clientimg" width="104" height="56">
+                                <use href="images/icons/iconsclient.svg#icon-logoclient4"></use>
                             </svg>
                         </li>
-                        <li class="list">
-                        <svg>
-                            <use class="clientlinks" href="images/icons/symbol-defs.svg#icon-brandcamplogo"></use>
+                        <li class="clientlist">
+                            <svg class="clientimg" width="104" height="56">
+                            <use href="images/icons/iconsclient.svg#icon-logoclient5"></use>
                         </svg>
                         </li>
-                        <li class="list">
-                            <svg>
-                                <use class="clientlinks" href="images/icons/symbol-defs.svg#icon-tagcompany"></use>
+                        <li class="clientlist">
+                            <svg class="clientimg" width="104" height="56">
+                                <use href="images/icons/iconsclient.svg#icon-logoclient6"></use>
                             </svg>
                         </li>
                     </ul>
@@ -219,19 +225,20 @@
             <div class="footlink">
                 <h3>Social Media</h3>
             <ul class="sociallink">
-                <li class="list"><a href="#" class="teamlinks"><img src="images/icons/instagram 2.svg"
+                <li class="sociallist list"><a href="#" class="teamlinks"><img src="images/icons/instagram 2.svg"
                             alt="instagram"></a></li>
-                <li class="list"><a href="#" class="teamlinks"><img src="images/icons/twitter 1.svg" alt="twitter"></a>
+                <li class="sociallist list"><a href="#" class="teamlinks"><img src="images/icons/twitter 1.svg" 
+                            alt="twitter"></a>
                 </li>
-                <li class="list"><a href="#" class="teamlinks"><img src="images/icons/facebook 1.svg"
+                <li class="sociallist list"><a href="#" class="teamlinks"><img src="images/icons/facebook 1.svg"
                             alt="facebook"></a></li>
-                <li class="list"><a href="#" class="teamlinks"><img src="images/icons/linkedin 1.svg"
+                <li class="sociallist list"><a href="#" class="teamlinks"><img src="images/icons/linkedin 1.svg"
                             alt="linkedin"></a></li>
             </ul>
         </div>
         </div>
     </footer>
-    <div class="modal" data-modal>
+    <div class="modal is-hidden" data-modal>
         <div class="modal-content">
             <button type="button" class="modal-close" data-modal-close>
                 <img src="images/icons/close-black.svg" alt="close button">
