@@ -87,8 +87,8 @@ p{
     line-height: 1.16em;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    padding: 24px 0;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 70px;
+    
    
 }
 .navheader .web {
@@ -116,26 +116,31 @@ p{
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    padding: 25.5px 0px;   
-  
+}
+.address-item{
+    padding: 0;
 }
 .navul{
     display: flex;
-    margin-right: 200px;
-    margin-left: 76px;
     padding: 0px;
+    margin: auto;
+    gap: 40px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
   
 }
 .navul .list{
     font-weight: 500;
-    padding-left: 40px;
+    
+    
 }
 
 .address-item{
     display: flex;
     gap: 40px;
+}
+.headeradd{
+    margin: auto;
 }
 
 .addheader{
@@ -152,13 +157,15 @@ p{
 
 .aheader:hover,
 .aheader:focus {
-    color: var(--ocean);   
+    color: var(--ocean);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .addheader:hover,
 .addheader:focus{
     color: var(--ocean);
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -170,10 +177,10 @@ p{
     position: absolute;
     left: 0;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     border: 2px solid var(--ocean);
     border-radius: 4px;
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .aheader{
     position: relative;
@@ -360,11 +367,15 @@ padding-bottom: 188px;
 
 }
 
-.studioteam- ul .list img{
-    flex-basis: calc((100%-72px)/3);
+.studioteam-ul .list{
     border-radius: 0px 0px 4px 4px;
-    background: var(--colorwhite);
+    background: var(--WHITE, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    
+}
+
+.studioteam-ul .list img{
+    flex-basis: calc((100%-72px)/3);
 }
 
 .teamcontent{
@@ -423,13 +434,11 @@ padding-bottom: 188px;
 .clientsection h2{
     color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
-        /* Header 2 */
     font-family: inherit;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
-        /* 111.111% */
     letter-spacing: 0.72px;
     text-transform: capitalize;
     margin-bottom: 72px;
@@ -443,36 +452,27 @@ padding-bottom: 188px;
     padding: 0;
 
 }
-
-.clientlist{
-    width: 168px;
-    height: 88px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--lightslate, #8e8f99);
-    border-radius: 4px;
-    /* padding: 16px 32px; */
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
     
 
 .clientimg{
+    width: 168px;
+    height: 88px;
+    justify-content: center;
+    align-items: center;
     fill: var(--lightslate);
+    border: 1px solid var(--lightslate, #8e8f99);
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
     
 }
 
 .clientlist .clientimg:focus,
 .clientlist .clientimg:hover{
-    fill: var(--ocean);
-    cursor: pointer;
-}
-
-.clientlist:focus,
-.clientlist:hover{
     border: 1px solid var(--ocean);
     fill: var(--ocean);
     cursor: pointer;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -631,6 +631,7 @@ padding-bottom: 188px;
 .port-button:hover,
 .port-button:focus {
     background-color: var(--iris);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     color: var(--colorwhite);
     box-shadow: 0px 3px 1px  rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.88), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -760,15 +761,19 @@ padding-bottom: 188px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--colorwhite);
-    border: 0px;
+    fill: var(--CORNFLOWER, #E7E9FC);
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.10);
+    border: 1px;
     border-radius: 50px;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     position: absolute;
     left: 93%;
     top:0px;
     cursor:pointer;
+    margin-top: 24px;
+    
 }
 
 
